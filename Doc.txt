@@ -1,0 +1,7 @@
+=> Folder taskmate adalah base atau main project
+    dan default sudah disediakan dari Django
+=> Django membagi setiap bagian menjadi Apps (satu folder)
+=> File __init__.py jarang digunakan
+=> File setting,py untuk konfigurasi project Django kita: security key untuk code sharing, debug, hosting, Apps yang ada, Middleware, database menggunakan SQLLite3 sebagai default, Autentikasi, waktu.
+=> File urls.py adalah main routing
+=> File manage.py adalah untuk running server local
