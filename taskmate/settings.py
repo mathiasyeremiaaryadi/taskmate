@@ -17,7 +17,7 @@ import environ
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Set debug and deploy enviroment
-env = environ.Env(SECRET_KEY = str,)
+env = environ.Env(SECRET_KEY=str,)
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     # Own App
     'todolist_app',
     'user_app',
-    
+
     # Third party
     'crispy_forms',
 ]
@@ -66,7 +66,7 @@ ROOT_URLCONF = 'taskmate.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [(os.path.join(BASE_DIR, 'templates')),],
+        'DIRS': [(os.path.join(BASE_DIR, 'templates')), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -142,4 +142,3 @@ LOGIN_URL = 'login'
 
 # Django heroku
 django_heroku.settings(locals())
-
